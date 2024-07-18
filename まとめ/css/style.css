@@ -251,6 +251,13 @@ form button{
     border-radius: 5px;
     padding: 12px 26px;
 }
+.grid{
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit,minmax(240px,600px));
+    margin-top: 6%;
+    margin-bottom: 50px;
+}
 
 /* PC版 */
 @media (min-width: 600px){
