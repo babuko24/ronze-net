@@ -9,9 +9,10 @@
 
         <script language="JavaScript">
             function passCheck() {
-                var UserInput = prompt("写真を見るには、パスワードが必要だよ。ろんぜが個別に教えたパスワードを入力してね。","");
-                location.href = UserInput + ".html";
-            }
+                Input = window.prompt("写真を見るにはパスワードが必要だよ。","");
+                if ( Input == "ronzephoto-himitudayo" )location.href = "ronzephoto-himitudayo.html";
+                else alert("パスワードが違うよ。");
+                }
         </script>
 
     <!--css-->
