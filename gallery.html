@@ -7,13 +7,20 @@
         <link rel="icon" type="image/png" href="images/favicon.png">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+        <script language="JavaScript">
+            function passCheck() {
+                Input = window.prompt("写真を見るにはパスワードが必要だよ。","");
+                if ( Input == "ronzephoto-himitudayo" )location.href = "ronzephoto-himitudayo.html";
+                else alert("パスワードが違うよ。");
+                }
+        </script>
+
     <!--css-->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-        
     </head>
 
     <body>
@@ -41,16 +48,14 @@
 
         <div class="gallery-contents wrapper">
             <article>
-                <h3 class="greeting">誕生日のふっくりとおとうたんに、ろんぜの素敵なphotoをプレゼント!</h3>
-                <form action="ronzephoto-himitudayo.html" method="post">
-                    <div>
-                        <label for="code-name">写真を見るには、パスワードが必要だよ。ろんぜが個別に教えたパスワードを入力してね。</label>
-                        <input type="password" pattern="ronzephoto-himitudayo" required>
-                    </div>
-                    <button type="submit" name="action" value="send">OK</button><br>
-                </form>
-            </article>
-            <br>
+                <h3 class="greeting">誕生日のふっくりとおとうたんに、ろんぜの素敵なphotoをプレゼント!</h3><br>
+                <p>
+                    写真を見るには、ボタンを押して特設サイトに移動しよう！
+                </p>
+            </article><br>
+            <form>
+                <button type="submit" name="action" value="send" onclick="passCheck()">BIRTHDAY GIFT →</button>
+            </form>
             <br>
             <br>
         </div><!--/.gallery-contents-->
