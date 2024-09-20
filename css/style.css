@@ -219,9 +219,8 @@ footer p{
     text-align: center
 }
 .grid{
-    display: flex;
+    display: 1rem,1rem;
     flex-wrap: wrap;
-    gap: 1rem;
 }
 /* フォーム */
 form div{
