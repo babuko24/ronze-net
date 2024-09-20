@@ -220,6 +220,8 @@ footer p{
 }
 .grid{
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 /* フォーム */
 form div{
