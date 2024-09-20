@@ -216,7 +216,10 @@ footer p{
 }
 #ronze-photo .page-title{
     color: #ff6c94;
-    text-align: center;
+    text-align: center
+}
+.grid{
+    display: flex;
 }
 /* フォーム */
 form div{
