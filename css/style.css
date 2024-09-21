@@ -219,8 +219,7 @@ footer p{
     text-align: center
 }
 .grid{
-    display: flex(1rem,1rem);
-    flex-wrap: wrap;
+    display: flex;
 }
 /* フォーム */
 form div{
